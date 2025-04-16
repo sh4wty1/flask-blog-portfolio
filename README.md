@@ -15,47 +15,26 @@ Minimalistic Design: Clean, modern, and simple design using custom CSS.
 # Installation Instructions:
 Clone the repository:
 
-bash
-Copy
-Edit
 git clone https://github.com/sh4wty1/flask-blog-portfolio.git
 Navigate into the project directory:
 
-bash
-Copy
-Edit
 cd flask-blog-portfolio
 Create a virtual environment:
 
-bash
-Copy
-Edit
 python -m venv venv
 Activate the virtual environment:
 
 On Windows:
 
-bash
-Copy
-Edit
 venv\Scripts\activate
 On Mac/Linux:
 
-bash
-Copy
-Edit
 source venv/bin/activate
 Install the required dependencies:
 
-bash
-Copy
-Edit
 pip install -r requirements.txt
 Run the application:
 
-bash
-Copy
-Edit
 python app.py
 Open your browser and visit http://127.0.0.1:5000/ to view the blog.
 
