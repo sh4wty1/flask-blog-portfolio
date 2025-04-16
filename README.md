@@ -16,12 +16,15 @@ Minimalistic Design: Clean, modern, and simple design using custom CSS.
 Clone the repository:
 
 git clone https://github.com/sh4wty1/flask-blog-portfolio.git
+
 Navigate into the project directory:
 
 cd flask-blog-portfolio
+
 Create a virtual environment:
 
 python -m venv venv
+
 Activate the virtual environment:
 
 On Windows:
@@ -31,12 +34,15 @@ venv\Scripts\activate
 On Mac/Linux:
 
 source venv/bin/activate
+
 Install the required dependencies:
 
 pip install -r requirements.txt
+
 Run the application:
 
 python app.py
+
 Open your browser and visit http://127.0.0.1:5000/ to view the blog.
 
 # Technologies Used:
