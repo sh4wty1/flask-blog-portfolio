@@ -1,0 +1,161 @@
+/* Geral */
+
+
+.playfair-display-font {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+#header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+    color: #4A90E2;
+}
+
+/* Mensagens Flash */
+.messages {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.message.success {
+    color: green;
+    font-weight: bold;
+}
+
+.message.danger {
+    color: red;
+    font-weight: bold;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Posts */
+#posts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-title {
+    font-family: 'Merriweather', serif;
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.post-content {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.post-date {
+    color: #777;
+    font-size: 0.9em;
+}
+
+.delete-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #4A90E2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.delete-link:hover {
+    background-color: #357ABD;
+}
+
+/* Formulário de Confirmação */
+#confirmation-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#confirmation-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#confirmation-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.confirmation-button {
+    padding: 10px 15px;
+    background-color: #e74c3c;
+    color: #fff;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.confirmation-button:hover {
+    background-color: #c0392b;
+}
+
+/* Links */
+.go-back-link {
+    color: #4A90E2;
+    text-decoration: none;
+}
+
+.go-back-link:hover {
+    text-decoration: underline;
+}

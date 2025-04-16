@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Special+Gothic+Expanded+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <h1>Simple Blog</h1>
+    </header>
+
+    <div id="messages" class="messages">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        <ul>
+            {% for category, message in messages %}
+            <li class="message {{ category }}">{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+    </div>
+
+    <section id="posts" class="posts">
+        <a href="{{ url_for('new_post') }}" class="btn-create">New Post</a>
+        <ul>
+            {% for post in posts %}
+            <li class="post">
+                <h2 class="post-title">{{ post.title }}</h2>
+                <p class="post-content">{{ post.content }}</p>
+                <small class="post-date">Published at: {{ post.formatted_date() }}</small>
+
+                <br>
+                <a href="{{ url_for('confirm_delete', id=post.id) }}" class="delete-link">DELETE</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+</body>
+
+</html>
