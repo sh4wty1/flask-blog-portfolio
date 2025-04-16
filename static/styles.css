@@ -34,6 +34,35 @@ h1 {
     color: #4A90E2;
 }
 
+/* Navigation Bar */
+.navbar {
+    background-color: #4A90E2;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ddd;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
 /* Mensagens Flash */
 .messages {
     margin-top: 20px;
@@ -107,6 +136,30 @@ li {
 }
 
 .delete-link:hover {
+    background-color: #357ABD;
+}
+
+.btn-create {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #4A90E2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+    max-width: 150px;
+    /* Set a maximum width */
+    text-align: center;
+    /* Center the text inside the button */
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+}
+
+
+
+.btn-create:hover {
     background-color: #357ABD;
 }
 
