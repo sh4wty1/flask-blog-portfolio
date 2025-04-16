@@ -1,17 +1,6 @@
 # Simple Flask Blog Portfolio
 This is a simple blog application built with Flask, SQLAlchemy, and Jinja2. It allows users to create, view, and delete posts. The project demonstrates the use of Flask for web development and SQLAlchemy for managing a simple SQLite database.
 
-# Features:
-Create Posts: Add blog posts with a title and content.
-
-View Posts: Display all posts with their titles, content, and publication date in a clean and minimalistic layout.
-
-Delete Posts: Securely delete posts after confirming the action by typing "DELETE".
-
-Formatted Dates: Display dates in the Brazilian timezone (UTC-3), formatted for better readability.
-
-Minimalistic Design: Clean, modern, and simple design using custom CSS.
-
 # Installation Instructions:
 Clone the repository:
 
