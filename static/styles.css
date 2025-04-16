@@ -2,7 +2,7 @@
 
 
 .playfair-display-font {
-    font-family: "Playfair Display", serif;
+    font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -16,8 +16,8 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f7f7f7;
+    font-family: "Nunito", sans-serif;
+    background-color: #1f2937;
     color: #333;
     line-height: 1.6;
     padding: 20px;
@@ -29,39 +29,43 @@ body {
 }
 
 h1 {
-    font-family: 'Merriweather', serif;
+    font-family: "Nunito", sans-serif;
     font-size: 2.5em;
     color: #4A90E2;
 }
 
-/* Navigation Bar */
+/* Logo */
+.logo-img {
+    height: 130px;
+    margin-right: 50px;
+}
+
+/* Navbar */
 .navbar {
-    background-color: #4A90E2;
-    padding: 10px 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    justify-content: space-between;
+    background-color: #000000;
+    /* azul escuro suave */
+    padding: 15px 30px;
+    border-radius: 10px;
 }
 
-.navbar a {
-    color: #fff;
-    text-decoration: none;
+/* Links */
+.nav-links a {
+    padding: 2em 1em;
+    font-size: 2em;
     margin: 0 10px;
-    font-size: 1em;
-    transition: color 0.3s;
+    color: #e0e0f0;
+    text-decoration: none;
+    font-weight: 500;
 }
 
-.navbar a:hover {
-    color: #ddd;
+.nav-links a:hover {
+    color: #8b5cf6;
+    /* roxo bonito */
 }
 
-.navbar .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #fff;
-}
 
 /* Mensagens Flash */
 .messages {
@@ -94,8 +98,8 @@ li {
 }
 
 .post {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #555470;
+    border: 1px solid #000000;
     border-radius: 8px;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -107,19 +111,25 @@ li {
 }
 
 .post-title {
-    font-family: 'Merriweather', serif;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
     font-size: 1.8em;
-    color: #333;
+    color: #fff;
     margin-bottom: 15px;
 }
 
 .post-content {
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
     font-size: 1em;
+    color: #fff;
     margin-bottom: 10px;
 }
 
 .post-date {
-    color: #777;
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    color: #fff;
     font-size: 0.9em;
 }
 
@@ -127,7 +137,7 @@ li {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
-    background-color: #4A90E2;
+    background-color: #8b5cf6;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -136,14 +146,14 @@ li {
 }
 
 .delete-link:hover {
-    background-color: #357ABD;
+    background-color: #b13838;
 }
 
 .btn-create {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
-    background-color: #4A90E2;
+    background-color: #8b5cf6;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -160,7 +170,7 @@ li {
 
 
 .btn-create:hover {
-    background-color: #357ABD;
+    background-color: #482b8b;
 }
 
 /* Formulário de Confirmação */
