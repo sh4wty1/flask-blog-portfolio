@@ -28,6 +28,10 @@ Install the required dependencies:
 
 'pip install -r requirements.txt'
 
+Create data bank:
+
+'python create_db.py'
+
 Run the application:
 
 'python app.py'
