@@ -4,37 +4,37 @@ This is a simple blog application built with Flask, SQLAlchemy, and Jinja2. It a
 # Installation Instructions:
 Clone the repository:
 
-´git clone https://github.com/sh4wty1/flask-blog-portfolio.git´
+`git clone https://github.com/sh4wty1/flask-blog-portfolio.git`
 
 Navigate into the project directory:
 
-´cd flask-blog-portfolio´
+`cd flask-blog-portfolio`
 
 Create a virtual environment:
 
-´python -m venv venv´
+`python -m venv venv`
 
 Activate the virtual environment:
 
 On Windows:
 
-´venv\Scripts\activate´
+`venv\Scripts\activate`
 
 On Mac/Linux:
 
-´source venv/bin/activate´
+`source venv/bin/activate`
 
 Install the required dependencies:
 
-´pip install -r requirements.txt´
+`pip install -r requirements.txt`
 
 Create data bank:
 
-´python create_db.py´
+`python create_db.py`
 
 Run the application:
 
-´python app.py´
+`python app.py`
 
 Open your browser and visit http://127.0.0.1:5000/ to view the blog.
 
